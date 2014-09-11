@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Jurgens du Toit']
   spec.email         = ['jrgns@jrgns.net']
   spec.description   = %(
-    A simple wrapper around the rufus-cheduler to run it as a Windows Service'
+    A simple wrapper around the rufus-scheduler to run it as a Windows Service
   ).strip
   spec.summary       = %(
-    A simple wrapper around the rufus-cheduler to run it as a Windows Service
+    A simple wrapper around the rufus-scheduler to run it as a Windows Service
   ).strip
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/jrgns/rufus-scheduler-win32-service'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($RS)
