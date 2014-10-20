@@ -5,7 +5,7 @@ require 'rufus/scheduler/win32/service/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rufus-scheduler-win32-service'
-  spec.version       = Rufus::Scheduler::Win32::Service::VERSION
+  spec.version       = RufusSchedulerWin32::Service::VERSION
   spec.authors       = ['Jurgens du Toit']
   spec.email         = ['jrgns@jrgns.net']
   spec.description   = %(

@@ -18,20 +18,30 @@ Or install it yourself as:
 
 ## Usage
 
-You want to run your rufus-scheduler tasks as a Windows service. This gem provides the boilerplate:
+You want to run your rufus-scheduler tasks as a Windows service. This gem provides the boilerplate.
+
+Use the `Daemon` class as the base for the class you're going to run as a service:
 
 ```
-require 'rufus/scheduler/win32/service'
+require 'rufus/scheduler/win32/daemon'
 
-class MyService < Rufus::Scheduler::Win32::Service
+class MyService < RufusSchedulerWin32::Daemon
   def service_init
     # Set up everything and create your scheduled tasks here
     scheduler.every '5m' do |_job|
       logger.info 'Reports of my death have been greatly exaggerated'
     end
+
+    scheduler.join
   end
 end
+
+# Start the service
+MyService.mainloop
 ```
+
+You get access to the `scheduler` property to schedule your tasks and the `logger`
+property for logging.
 
 ## Contributing
 
