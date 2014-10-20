@@ -1,7 +1,7 @@
-require 'rufus/scheduler/win32/service'
+require 'rufus/scheduler/win32/daemon'
 
-describe Rufus::Scheduler::Win32::Service do
-  subject { Rufus::Scheduler::Win32::Service.new }
+describe RufusSchedulerWin32::Daemon do
+  subject { RufusSchedulerWin32::Daemon.new }
 
   it 'provides a scheduler' do
     expect(subject).to respond_to :scheduler

@@ -4,10 +4,8 @@ require 'win32/daemon'
 require 'rufus-scheduler'
 
 module RufusSchedulerWin32
-  include ::Win32
-
   # Service wrapper around rufus-scheduler
-  class Service
+  class Daemon < Win32::Daemon
     attr_writer :logger
 
     def service_main
