@@ -1,6 +1,6 @@
 # Rufus::Scheduler::Win32::Service
 
-A simple wrapper around the rufus-cheduler (https://github.com/jmettraux/rufus-scheduler) to run it as a Windows Service (https://github.com/djberg96/win32-service).
+A simple wrapper around the rufus-scheduler (https://github.com/jmettraux/rufus-scheduler) to run it as a Windows Service (https://github.com/djberg96/win32-service).
 
 ## Installation
 
